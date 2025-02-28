@@ -49,50 +49,50 @@
   /* Base colors */
   --background: #ffffff;
   --foreground: #4a154b;
-  
+
   /* Card colors */
   --card: #ffffff;
   --card-foreground: #4a154b;
-  
+
   /* Popover colors */
   --popover: #ffffff;
   --popover-foreground: #4a154b;
-  
+
   /* Primary colors - Purple from screenshot */
   --primary: #8a70ff;
   --primary-foreground: #ffffff;
-  
+
   /* Secondary colors - Mint green from screenshot */
   --secondary: #b4f0d3;
   --secondary-foreground: #4a154b;
-  
+
   /* Muted colors */
   --muted: #f3f0ff;
   --muted-foreground: #7c6d9f;
-  
+
   /* Accent colors - Light purple */
   --accent: #e8e5fe;
   --accent-foreground: #4a154b;
-  
+
   /* Destructive colors */
   --destructive: #ff5252;
   --destructive-foreground: #ffffff;
-  
+
   /* Border, input, and ring colors */
   --border: #e5e7eb;
   --input: #e5e7eb;
   --ring: #8a70ff;
-  
+
   /* Chart colors */
   --chart-1: #8b7ef8;
   --chart-2: #b4f0d3;
   --chart-3: #ffd166;
   --chart-4: #ff9f9f;
   --chart-5: #c5a3ff;
-  
+
   /* Border radius */
   --radius: 1rem;
-  
+
   /* Sidebar colors */
   --sidebar: #ffffff;
   --sidebar-foreground: #4a154b;
@@ -108,47 +108,47 @@
   /* Base colors */
   --background: #1a1625;
   --foreground: #ffffff;
-  
+
   /* Card colors */
   --card: #1a1625;
   --card-foreground: #ffffff;
-  
+
   /* Popover colors */
   --popover: #1a1625;
   --popover-foreground: #ffffff;
-  
+
   /* Primary colors */
   --primary: #8a70ff;
   --primary-foreground: #ffffff;
-  
+
   /* Secondary colors */
   --secondary: #2d2a3d;
   --secondary-foreground: #ffffff;
-  
+
   /* Muted colors */
   --muted: #2d2a3d;
   --muted-foreground: #a8a4b8;
-  
+
   /* Accent colors */
   --accent: #2d2a3d;
   --accent-foreground: #ffffff;
-  
+
   /* Destructive colors */
   --destructive: #ff5252;
   --destructive-foreground: #ffffff;
-  
+
   /* Border, input, and ring colors */
   --border: #2d2a3d;
   --input: #2d2a3d;
   --ring: #8a70ff;
-  
+
   /* Chart colors */
   --chart-1: #8b7ef8;
   --chart-2: #b4f0d3;
   --chart-3: #ffd166;
   --chart-4: #ff9f9f;
   --chart-5: #c5a3ff;
-  
+
   /* Sidebar colors */
   --sidebar: #2d2a3d;
   --sidebar-foreground: #ffffff;
