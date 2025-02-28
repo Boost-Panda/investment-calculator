@@ -130,7 +130,6 @@ export default function InvestmentCalculator() {
                   onChange={(e) => setYears(Number(e.target.value))}
                   className="pl-10 border-input focus:ring-primary"
                 />
-                <span className="absolute right-3 top-2.5 text-muted-foreground">Years</span>
               </div>
             </div>
             <div className="space-y-2">
@@ -146,7 +145,6 @@ export default function InvestmentCalculator() {
                   onChange={(e) => setRate(Number(e.target.value))}
                   className="pl-10 border-input focus:ring-primary"
                 />
-                <span className="absolute right-3 top-2.5 text-muted-foreground">%</span>
               </div>
             </div>
             <div className="space-y-2">
