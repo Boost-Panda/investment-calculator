@@ -36,7 +36,6 @@ export default function InvestmentCalculator() {
     if (compoundFrequency === "monthly") periodsPerYear = 12
     if (compoundFrequency === "daily") periodsPerYear = 365
 
-    const recurringPeriodsPerYear = recurringFrequency === "monthly" ? 12 : 1
     const ratePerPeriod = rateDecimal / periodsPerYear
     const recurringPerPeriod = recurringAmount / (recurringFrequency === "monthly" ? 1 : 12)
 
