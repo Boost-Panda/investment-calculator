@@ -93,14 +93,14 @@ export default function InvestmentCalculator() {
   }
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-primary mb-8 text-center">Investment Calculator</h1>
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        <Card className="lg:col-span-5 border-none shadow-md">
-          <CardHeader className="pb-2">
-            <CardTitle className="text-xl font-semibold text-primary">Investment Details</CardTitle>
+    <div className="w-full h-full overflow-auto bg-background p-3 sm:p-4">
+      <h1 className="text-2xl font-bold text-primary mb-3">Investment Calculator</h1>
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
+        <Card className="md:col-span-5 border-none shadow-sm">
+          <CardHeader className="pb-1 pt-3 px-4">
+            <CardTitle className="text-lg font-semibold text-primary">Investment Details</CardTitle>
           </CardHeader>
-          <CardContent className="space-y-6">
+          <CardContent className="space-y-3 p-4">
             <div className="space-y-2">
               <Label htmlFor="initial-investment" className="font-medium text-primary">
                 Initial investment
@@ -211,11 +211,11 @@ export default function InvestmentCalculator() {
           </CardContent>
         </Card>
 
-        <Card className="lg:col-span-7 border-none shadow-md">
-          <CardContent className="p-6">
-            <div className="mb-8 text-center">
-              <h3 className="text-xl font-medium text-primary mb-2">Total Balance</h3>
-              <p className="text-4xl font-bold text-primary">
+        <Card className="md:col-span-7 border-none shadow-sm">
+          <CardContent className="p-4">
+            <div className="mb-4">
+              <h3 className="text-lg font-medium text-primary mb-1">Total Balance</h3>
+              <p className="text-2xl font-bold text-primary">
                 {new Intl.NumberFormat("en-US", {
                   style: "currency",
                   currency: "USD",
@@ -223,19 +223,21 @@ export default function InvestmentCalculator() {
                 }).format(totalBalance)}
               </p>
             </div>
-            <div className="h-[400px]">
+            <div className="h-[280px]">
               <ResponsiveContainer width="100%" height="100%">
-                <LineChart data={chartData} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+                <LineChart data={chartData} margin={{ top: 5, right: 20, left: 10, bottom: 5 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
                   <XAxis 
                     dataKey="year" 
                     label={{ value: "Year", position: "insideBottom", offset: -5 }}
                     stroke="var(--muted-foreground)"
+                    tick={{ fontSize: 12 }}
                   />
                   <YAxis 
                     tickFormatter={formatYAxis} 
-                    width={60} 
+                    width={50} 
                     stroke="var(--muted-foreground)"
+                    tick={{ fontSize: 12 }}
                   />
                   <Tooltip
                     formatter={(value: number) => [formatCurrency(value), ""]}
@@ -243,10 +245,12 @@ export default function InvestmentCalculator() {
                     contentStyle={{ 
                       backgroundColor: "var(--card)",
                       borderColor: "var(--border)",
-                      color: "var(--card-foreground)"
+                      color: "var(--card-foreground)",
+                      fontSize: "12px",
+                      padding: "8px"
                     }}
                   />
-                  <Legend />
+                  <Legend wrapperStyle={{ fontSize: "12px" }} />
                   <Line
                     type="monotone"
                     dataKey="principal"
