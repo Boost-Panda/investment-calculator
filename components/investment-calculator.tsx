@@ -94,12 +94,8 @@ export default function InvestmentCalculator() {
 
   return (
     <div className="w-full h-full overflow-auto bg-background p-3 sm:p-4">
-      <h1 className="text-2xl font-bold text-primary mb-3">Investment Calculator</h1>
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
         <Card className="md:col-span-5 border-none shadow-sm">
-          <CardHeader className="pb-1 pt-3 px-4">
-            <CardTitle className="text-lg font-semibold text-primary">Investment Details</CardTitle>
-          </CardHeader>
           <CardContent className="space-y-3 p-4">
             <div className="space-y-2">
               <Label htmlFor="initial-investment" className="font-medium text-primary">
