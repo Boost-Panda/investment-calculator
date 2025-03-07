@@ -120,9 +120,17 @@ export default function InvestmentCalculator() {
                 <Calendar className="absolute left-3 top-2.5 h-5 w-5 text-muted-foreground" />
                 <Input
                   id="years"
-                  type="number"
+                  type="text"
+                  inputMode="numeric"
+                  pattern="[0-9]*"
                   value={years}
-                  onChange={(e) => setYears(Number(e.target.value))}
+                  onChange={(e) => {
+                    if (e.target.value === '') {
+                      setYears(0)
+                    } else {
+                      setYears(Number(e.target.value))
+                    }
+                  }}
                   className="pl-10 border-input focus:ring-primary"
                 />
               </div>
