@@ -128,7 +128,12 @@ export default function InvestmentCalculator() {
                     if (e.target.value === '') {
                       setYears(0)
                     } else {
-                      setYears(Number(e.target.value))
+                      const numericValue = e.target.value.replace(/[^0-9]/g, '')
+                      setYears(Number(numericValue))
+                      // If the input contained non-numeric characters, update the input value
+                      if (numericValue !== e.target.value) {
+                        e.target.value = numericValue
+                      }
                     }
                   }}
                   className="pl-10 border-input focus:ring-primary"
